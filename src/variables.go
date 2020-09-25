@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
 	var a = "hello"
@@ -9,8 +12,9 @@ func main() {
 	var b, c int = 1, 2
 	fmt.Println(b + c)
 
-	var d bool = true
+	var d bool = false
 	fmt.Println(d)
+	fmt.Println(reflect.TypeOf(d))
 
 	var e int
 	fmt.Println(e)
